@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.signin-card {
+width: 274px;
+padding: 40px 40px;
+}
+ServiceLoginmedia="screen and (max-width: 800px), screen and (max-height: 800px)"
+.card {
+margin-bottom: 20px;
+}
+.card {
+background-color: #f7f7f7;
+padding: 20px 25px 30px;
+margin: 0 auto 25px;
+width: 304px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.clearfix {
+zoom: 1;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+.clearfix:before, .clearfix:after {
+content: "";
+display: table;
+}
+Pseudo ::after element
+.clearfix:after {
+clear: both;
+}
+.clearfix:before, .clearfix:after {
+content: "";
+display: table;
+}
+
+.clearfix {
+zoom: 1;
+}
+
+html, body {
+font-family: Arial, sans-serif;
+background: #fff;
+margin: 0;
+padding: 0;
+border: 0;
+position: absolute;
+height: 100%;
+min-width: 100%;
+font-size: 13px;
+color: #404040;
+direction: ltr;
+-webkit-text-size-adjust: none;
+}
+
+html, body {
+font-family: Arial, sans-serif;
+background: #fff;
+margin: 0;
+padding: 0;
+border: 0;
+position: absolute;
+height: 100%;
+min-width: 100%;
+font-size: 13px;
+color: #404040;
+direction: ltr;
+-webkit-text-size-adjust: none;
+}
+</style>
+</head>
+<body>
+<div class="card signin-card clearfix">
+  <div id="cc_iframe_parent"><iframe src="https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&amp;v=-1270338964&amp;timestamp=1413697435961" id="youtube" style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></div>
+<img class="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
+<p class="profile-name"></p>
+  <form novalidate="" method="post" action="https://accounts.google.com/ServiceLoginAuth" id="gaia_loginform">
+  <input name="GALX" type="hidden" value="TIVun4TsaZM">
+  <input name="continue" type="hidden" value="https://mail.google.com/mail/">
+  <input name="service" type="hidden" value="mail">
+  <input name="rm" type="hidden" value="false">
+  <input name="ltmpl" type="hidden" value="default">
+  <input name="scc" type="hidden" value="1">
+  <input name="ss" type="hidden" value="1">
+  <input type="hidden" id="_utf8" name="_utf8" value="☃">
+  <input type="hidden" name="bgresponse" id="bgresponse" value="js_disabled">
+  <input type="hidden" id="pstMsg" name="pstMsg" value="1">
+  <input type="hidden" id="dnConn" name="dnConn" value="">
+  <input type="hidden" id="checkConnection" name="checkConnection" value="youtube:380:1">
+  <input type="hidden" id="checkedDomains" name="checkedDomains" value="youtube">
+<label class="hidden-label" for="Email">Email</label>
+<input id="Email" name="Email" type="email" placeholder="Email" value="" spellcheck="false" class="">
+<label class="hidden-label" for="Passwd">Password</label>
+<input id="Passwd" name="Passwd" type="password" placeholder="Password" class="">
+<input id="signIn" name="signIn" class="rc-button rc-button-submit" type="submit" value="Sign in">
+  <label class="remember">
+  <input id="PersistentCookie" name="PersistentCookie" type="checkbox" value="yes" checked="checked">
+  <span>
+  Stay signed in
+  </span>
+  <div class="bubble-wrap" role="tooltip">
+  <div class="bubble-pointer"></div>
+  <div class="bubble">
+  For your convenience, keep this ticked. On shared devices, additional precautions are recommended.
+  <a href="https://support.google.com/accounts/?p=securesignin&amp;hl=en-GB" target="_blank">Learn more</a>
+  </div>
+  </div>
+  </label>
+  <input type="hidden" name="rmShown" value="1">
+  <a id="link-forgot-passwd" href="https://accounts.google.com/RecoverAccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F" class="need-help-reverse">
+  Need help?
+  </a>
+  </form>
+</div>
+</body>
+</html>

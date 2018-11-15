@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app='my'>
+<head >
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="js/angular.min.js"></script>
+<!-- <script type="text/javascript" src="js/ngroute.js"></script> -->
+</head>
+<body>
+	Enter ur name
+<input type="text" ng-model="name"/>
+<h2 id="target">hello {{name}}</h2>
+ 
+ <div ng-controller="getall">
+ <button ng-click="get()">GET RECORDS</button>
+ <div ng-repeat="item in list">
+{{item.id}}
+{{item.name}}
+{{item.type}}
+{{item.cost}}
+{{item.vender}}
+ </div>
+ </div>
+ 
+ <script type="text/javascript">
+
+
+ /* function getall($scope,$http)
+{
+	$scope.get=function(){
+		alert($http);
+	$http.get("getallRec.action").
+	success(function(data,status,header,config){
+		//alert(data[0].id);
+			$scope.list=data;
+		})
+	.error(function(data,status,header,config){
+		alert(status);
+	});
+	}}  */
+	var my=angular.module("my",['ngRoute']);
+	my.controller("getall",['$scope','$http',function($scope,$http){
+		$scope.get=function(){
+			//alert($scope);
+			$http.get("getallRec.action").	
+			success(function(data,status,header,config){
+				//alert(data[0].id);
+					$scope.list=data;
+				})
+			.error(function(data,status,header,config){
+				alert(status);
+			});
+
+		}
+		}]);
+	 
+ </script>
+</body>
+</html>
